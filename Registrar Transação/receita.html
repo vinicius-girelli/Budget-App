@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Título da janela -->
+        <title>Budget | Receita</title>
+
+        <!-- Ícone da janela -->
+        <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="receita.css" />
+
+        <!-- Ícones -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <h1>Registrar Receita</h1>
+        <div class="transaction">
+            <!-- Painel esquerdo -->
+            <div class="left-side">
+                <!-- Descrição -->
+                <div class="description">
+                    <p>Descrição</p>
+                    <input
+                        type="text"
+                        id="descricao"
+                        name="descricao"
+                        placeholder="Exemplo: venda da moto"
+                    />
+                </div>
+
+                <!-- Valor -->
+                <div class="price">
+                    <p>Valor</p>
+                    <input
+                        type="text"
+                        id="valor"
+                        name="valor"
+                        placeholder="R$ 0,00"
+                        class="price-input"
+                    />
+                </div>
+
+                <!-- Conta -->
+                <div class="account">
+                    <p>Conta</p>
+                    <select name="conta" id="conta">
+                        <option value="label" disabled selected>
+                            Escolha a sua conta
+                        </option>
+                        <option value="minha_carteira">Minha Carteira</option>
+                        <option value="nubank">NuBank</option>
+                        <option value="inter">Inter</option>
+                    </select>
+                </div>
+
+                <!-- Membro -->
+                <div class="member">
+                    <p>Adicionar Membro</p>
+                    <select name="adicionar_membro" id="adicionar_membro">
+                        <option value="label" disabled selected>
+                            Escolha o membro
+                        </option>
+                        <option value="pai">Pai</option>
+                        <option value="filho">Filho</option>
+                        <option value="irmao">Irmão</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Painel direito -->
+            <div class="right-side">
+                <!-- Data -->
+                <div class="date">
+                    <p>Data</p>
+                    <input type="date" id="data" name="data" />
+                </div>
+
+                <!-- Categoria -->
+                <div class="category">
+                    <p>Categoria</p>
+                    <select name="categoria" id="categoria">
+                        <option value="label" disabled selected>
+                            Escolha a categoria
+                        </option>
+                        <option value="transporte">Transporte</option>
+                        <option value="alimentacao">Alimentação</option>
+                        <option value="pagamentos">Pagamentos</option>
+                        <option value="educacao">Educação</option>
+                    </select>
+                </div>
+
+                <!-- Forma de Pagamento -->
+                <div class="payment">
+                    <p>Forma de Pagamento</p>
+                    <select name="forma_pagamento" id="forma_pagamento">
+                        <option value="label" disabled selected>
+                            Escolha a forma de pagamento
+                        </option>
+                        <option value="dinheiro">Dinheiro</option>
+                        <option value="cartao">Cartão</option>
+                        <option value="pix">PIX</option>
+                    </select>
+                </div>
+
+                <div class="actions">
+                    <i class="fa-solid fa-thumbs-up fa-3x"></i>
+                    <i class="fa-solid fa-repeat fa-3x"></i>
+                    <i class="fa-solid fa-paperclip fa-3x"></i>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-circle-check fa-7x done"></i>
+    </body>
+</html>

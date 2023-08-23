@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título da janela -->
+  <title>Budget | Criar Nova Categoria</title>
+
+  <!-- Ícone da janela -->
+  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="categoria.css" />
+</head>
+
+<body>
+  <h1>Categoria</h1>
+  <div class="categoria">
+    <div class="left-side">
+      <div class="nome_meta">
+        <p>Nome da Categoria</p>
+        <input  
+              type="text" 
+              id="nome_meta" 
+              name="nome_meta"
+              placeholder="Exemplo: Estudos"
+          />
+        <p>Limite de despesa</p>
+        <input  
+              type="text" 
+              id="limite_despesa" 
+              placeholder="R$ 0,00"
+          />
+        <h3>Cor:</h3>
+        <input type="color" id="cor" name="cor">
+        <h3>Ícone</h3>
+        <!--sem icone por hora -->
+        <select>
+          <option>Alimentação</option>
+          <option>Lazer</option>
+          <option>Casa</option>
+          <option>Dívida</option>
+          <option>Salário</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Criar categoria">
+</body>
+
+</html>
